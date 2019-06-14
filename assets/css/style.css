@@ -7,7 +7,7 @@
 
 .wrapper {
 
-    width: 960px;
+    max-width: 960px;
     padding: 20px;
     margin: 0 auto;
 
@@ -111,6 +111,7 @@ footer {
 
 .gallery {
     align-self: center;
+    overflow: hidden;
 }
 
 td {
@@ -131,3 +132,20 @@ a:link, a:visited {
     color: #777777;
     text-decoration: none;
 }
+
+/* I'm not sure why my input boxes are bumping past the edge of the div on the right side??*/
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #666666;
+    border-radius: 4px;
+    resize: vertical;
+  }
+
+  /* I tried to get the placeholder text to alight to the top, but it's not working. 
+  I think it's because it's placeholder text and that takes a special code vs just normal text in a normal div? But I couldn't figure it out */
+
+  #message {
+      vertical-align: top;
+  }
